@@ -8,7 +8,7 @@ describe('Fix the Scope', function() {
         } catch (error) {
         var ErrorMessage = error.name
         
-        assert.is(ErrorMessage)
+        expect(ErrorMessage)
         }
     
      })
