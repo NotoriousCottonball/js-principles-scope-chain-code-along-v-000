@@ -15,7 +15,7 @@ describe('Fix the Scope', function() {
   })
   describe('setBestCustomer()', function() {
     it('setBestCustomer', () => {
-      expect(window.bestCustomer).to.equal(3)
+      expect(window.bestCustomer).to.equal(undefined)
       window.setBestCustomer()
       expect(window.bestCustomer).to.equal('not bob')
     })
@@ -30,7 +30,7 @@ describe('Fix the Scope', function() {
 
   describe('reassignLeastFavorite', function(){
     it('unsuccessfully tries to reassign the least favorite customer', () => {
-      expect(changeLeastFavoriteCustomer()).to.equal(undefined)
+      expect(changeLeastFavoriteCustomer()).to.equal(3)
     })
   })
 
