@@ -17,7 +17,7 @@ const favoriteCustomer = 'someone';
  const leastFavoriteCustomer = 'Jim Halpert';
 
  function changeLeastFavoriteCustomer() {
-  let customer = 3;
+  customer = 3;
   return 3;
 }
 
