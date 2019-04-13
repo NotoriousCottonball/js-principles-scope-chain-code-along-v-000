@@ -8,7 +8,7 @@ describe('Fix the Scope', function() {
         } catch (error) {
         var ErrorMessage = error.message
         
-        assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists')
+       
         assert.isDefined(ErrorMessage)
         }
     
