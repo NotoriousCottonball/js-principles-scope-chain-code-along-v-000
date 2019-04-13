@@ -8,7 +8,7 @@ describe('Fix the Scope', function() {
         } catch (error) {
         var ErrorMessage = error.name
         
-        expect(ErrorMessage).to.equal("")
+        expect(ErrorMessage).to.equal("SyntaxError")
         }
     
      })
