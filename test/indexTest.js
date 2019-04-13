@@ -9,8 +9,11 @@ describe('Fix the Scope', function() {
         var ErrorMessage = error.message;
         
         assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists');
-    }
-    })
+        assert.isDefined(ErrorMessage);
+        }
+     })
+  })
+    
     
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', () => {
