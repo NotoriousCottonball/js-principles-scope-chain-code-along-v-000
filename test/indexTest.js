@@ -3,7 +3,7 @@ describe('Fix the Scope', function() {
   
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
-        expect(eventProcessor).to.not.throw(Error)
+        expect(window).to.not.throw(Error)
     })
     
   describe('declare customerName to be bob in global scope', function() {
