@@ -21,5 +21,6 @@ const favoriteCustomer = 'someone';
 }
 
  function attemptTwoFavoriteCustomers () {
-    return customer = 3;
+    let customer = 3;
+    return 3;
 }
