@@ -30,7 +30,7 @@ describe('Fix the Scope', function() {
 
   describe('reassignLeastFavorite', function(){
     it('unsuccessfully tries to reassign the least favorite customer', () => {
-      expect(window.changeLeastFavoriteCustomer.to.equal(3)
+      expect(window.changeLeastFavoriteCustomer).to.equal(3)
     })
   })
 
