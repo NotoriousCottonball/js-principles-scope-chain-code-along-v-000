@@ -30,13 +30,13 @@ describe('Fix the Scope', function() {
 
   describe('reassignLeastFavorite', function(){
     it('unsuccessfully tries to reassign the least favorite customer', () => {
-      expect(changeLeastFavoriteCustomer).to.equal(undefined)
+      expect(changeLeastFavoriteCustomer()).to.equal(undefined)
     })
   })
 
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
-      expect(attemptTwoFavoriteCustomers).equal(3)
+      expect(attemptTwoFavoriteCustomers()).equal(3)
     })
   })
 })
