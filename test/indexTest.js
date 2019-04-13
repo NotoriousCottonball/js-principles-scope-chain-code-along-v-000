@@ -6,7 +6,7 @@ describe('Fix the Scope', function() {
          try {
           let result1 = window.attemptTwoFavoriteCustomers
         } catch (error) {
-        var ErrorMessage = error.message
+        var ErrorMessage = error.name
         
         assert.is(ErrorMessage)
         }
