@@ -6,9 +6,11 @@ describe('Fix the Scope', function() {
          var error;
          try {
           attemptTwoFavoriteCustomers()
-         } catch (e) {
+         } 
+         catch (e) {
            error = e.name;
-         }expect(error.name).to.equal('SomeError'); 
+         }
+         expect(error.name).to.equal('SomeError'); 
     
      })
   })
