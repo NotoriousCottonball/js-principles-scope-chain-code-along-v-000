@@ -4,8 +4,8 @@ describe('Fix the Scope', function() {
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
          try {
-        let result1 = await window.attemptTwoFavoriteCustomers
-    } catch (error) {
+             let result1 = await window.attemptTwoFavoriteCustomers
+        } catch (error) {
         //  assign error.message to ErrorMessage
         var ErrorMessage = error.message;
         //  catch it and  re throw it in assret.throws fn and pass the error.message as argument and assert it is the same message expected
