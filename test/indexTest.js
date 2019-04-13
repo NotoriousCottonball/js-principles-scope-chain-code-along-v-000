@@ -10,7 +10,7 @@ describe('Fix the Scope', function() {
          catch (e) {
            error = e.name;
          }
-         expect(error.name).to.equal('SomeError'); 
+         expect(error.name).to.equal('SyntaxError'); 
     
      })
   })
