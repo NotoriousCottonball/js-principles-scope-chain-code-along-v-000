@@ -15,7 +15,7 @@ describe('Fix the Scope', function() {
   })
   describe('setBestCustomer()', function() {
     it('setBestCustomer', () => {
-      expect(window.bestCustomer).to.equal(undefined)
+      expect(window.bestCustomer).to.equal(3)
       window.setBestCustomer()
       expect(window.bestCustomer).to.equal('not bob')
     })
