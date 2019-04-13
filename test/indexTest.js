@@ -5,7 +5,7 @@ describe('Fix the Scope', function() {
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
          try {
            window.attemptTwoFavoriteCustomers
-         } catch (error) {
+         } catch (err) {
            
          }
          expect(console.log(error.name)).to.equal('SyntaxError')
