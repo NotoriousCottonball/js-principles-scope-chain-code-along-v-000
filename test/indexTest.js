@@ -1,5 +1,11 @@
 const expect = chai.expect;
 describe('Fix the Scope', function() {
+  
+  describe('attemptTwoFavoriteCustomers', function(){
+    it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
+      expect(attemptTwoFavoriteCustomers().to.throw('SyntaxError'))
+    })
+    
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', () => {
       expect(window.customerName).to.equal('bob')
@@ -35,9 +41,6 @@ describe('Fix the Scope', function() {
     })
   })
 
-  describe('attemptTwoFavoriteCustomers', function(){
-    it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
-      expect(attemptTwoFavoriteCustomers().to.throw('SyntaxError'))
-    })
+  
   })
 })
