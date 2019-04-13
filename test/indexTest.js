@@ -4,8 +4,7 @@ describe('Fix the Scope', function() {
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
          try {
-        // here the function that i expect to will return an errror
-        let walletid = await Network.submitTransaction(transaction)
+        let result1 = await Network.submitTransaction(transaction)
     } catch (error) {
         //  assign error.message to ErrorMessage
         var ErrorMessage = error.message;
