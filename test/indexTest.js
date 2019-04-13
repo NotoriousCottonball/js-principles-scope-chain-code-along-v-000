@@ -1,5 +1,4 @@
 const expect = chai.expect;
-const assert = chai.assert
 describe('Fix the Scope', function() {
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', () => {
