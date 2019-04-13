@@ -7,7 +7,7 @@ describe('Fix the Scope', function() {
            attemptTwoFavoriteCustomers()
          } catch (error) {
          var ErrorMessage = error.name
-        
+    
         }
         expect(ErrorMessage).to.throw('SyntaxError')
     
