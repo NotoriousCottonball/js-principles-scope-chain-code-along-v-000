@@ -3,7 +3,6 @@ describe('Fix the Scope', function() {
   
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
-      var result1 = attemptTwoFavoriteCustomers()
       expect(result1).to.throw(Error)
     })
     
