@@ -6,11 +6,12 @@ describe('Fix the Scope', function() {
          try {
              let result1 = await window.attemptTwoFavoriteCustomers
         } catch (error) {
-        var ErrorMessage = error.message;
+        var ErrorMessage = error.message
         
-        assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists');
-        assert.isDefined(ErrorMessage);
+        assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists')
+        assert.isDefined(ErrorMessage)
         }
+    
      })
   })
     
