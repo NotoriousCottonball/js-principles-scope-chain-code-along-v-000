@@ -5,7 +5,7 @@ describe('Fix the Scope', function() {
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
          var error;
          try {
-          attemptTwoFavoriteCustomers()
+          window.attemptTwoFavoriteCustomers()
          } 
          catch (e) {
            error = e.name;
