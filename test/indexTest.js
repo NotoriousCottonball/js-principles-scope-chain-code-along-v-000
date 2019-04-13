@@ -7,7 +7,7 @@ describe('Fix the Scope', function() {
              let result1 = await window.attemptTwoFavoriteCustomers
         } catch (error) {
         var ErrorMessage = error.message;
-        //  catch it and  re throw it in assret.throws fn and pass the error.message as argument and assert it is the same message expected
+        
         assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists');
     }
     })
