@@ -3,8 +3,9 @@ describe('Fix the Scope', function() {
   
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
+         var error;
          try {
-          let result1 = window.attemptTwoFavoriteCustomers
+          attemptTwoFavoriteCustomers()
         } catch (error) {
         var ErrorMessage = error.name
         
@@ -14,6 +15,11 @@ describe('Fix the Scope', function() {
      })
   })
     
+    
+    var error;
+try { foo() } catch (e) {
+     error = e;
+} finally { expect(error.name).to.equal('SomeError'); }
     
   describe('declare customerName to be bob in global scope', function() {
     it('returns the customerName', () => {
