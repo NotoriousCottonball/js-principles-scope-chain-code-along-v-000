@@ -3,7 +3,15 @@ describe('Fix the Scope', function() {
   
   describe('attemptTwoFavoriteCustomers', function(){
     it('unsuccessfully tries to declare favoriteCustomer with let two times', () => {
-        expect(window.attemptTwoFavoriteCustomers).to.throw(Error)
+         try {
+        // here the function that i expect to will return an errror
+        let walletid = await Network.submitTransaction(transaction)
+    } catch (error) {
+        //  assign error.message to ErrorMessage
+        var ErrorMessage = error.message;
+        //  catch it and  re throw it in assret.throws fn and pass the error.message as argument and assert it is the same message expected
+        assert.throws(() => { throw new Error(ErrorMessage) },'This user already exists');
+    }
     })
     
   describe('declare customerName to be bob in global scope', function() {
