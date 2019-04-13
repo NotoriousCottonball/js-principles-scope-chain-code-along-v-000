@@ -6,8 +6,7 @@ describe('Fix the Scope', function() {
          try {
            window.attemptTwoFavoriteCustomers
          } catch (error) {
-         var ErrorMessage = error.name
-         expect(ErrorMessage).to.equal('ReferenceError')
+         console.log(error.name)
          }
         
     
